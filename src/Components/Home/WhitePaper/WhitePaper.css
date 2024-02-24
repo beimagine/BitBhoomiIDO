@@ -1,0 +1,11 @@
+.paperSection {
+    margin: 5rem 0;
+    padding: 0 4rem;
+}
+
+.paper {
+    height: 70vh;
+    width:55%;
+    /* background: var(--light-10); */
+    margin-bottom: 1.5rem;
+}

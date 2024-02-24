@@ -1,0 +1,33 @@
+.vertical-timeline-element--work h1 {
+    margin-bottom: 2rem;
+    color:var(--blueColor);
+    font-size: 2rem;
+}
+
+.vertical-timeline-element--work h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.vertical-timeline-element--work p {
+    margin-bottom: 1.4rem;
+    font-size: 1.1rem;
+}
+
+.vertical-timeline-element-content-arrow {
+    display: none;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none;
+}
+
+.leftImage {
+    position: absolute;
+    left: -45rem;
+}
+
+.rightImage {
+    position: absolute;
+    right: -45rem;
+}

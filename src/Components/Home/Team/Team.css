@@ -1,0 +1,16 @@
+.teamSection {
+    margin: 5rem 0;
+    padding: 0 4rem;
+}
+
+.teamMembersContainer{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.teamMember{
+    background: var(--light-10);
+    height:20rem;
+    width:20%;
+}

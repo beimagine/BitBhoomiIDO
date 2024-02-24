@@ -1,0 +1,10 @@
+.productSection {
+    margin: 5rem 0;
+    padding: 0 4rem;
+}
+
+.productSection p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}

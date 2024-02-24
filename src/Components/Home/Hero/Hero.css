@@ -1,0 +1,53 @@
+.heroSection {
+    height: calc(100vh - 100px);
+    width: 60%;
+    margin: auto;
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.heroSection .heroMaintext {
+    font-size: 5.8rem;
+    /* background: linear-gradient(to right, #7c43ff, #17bc83); */
+    background: linear-gradient(-272deg, #8D5FF6 14.39%, #6288CB 31.42%, #2AC591 59.81%, #49A3B2 83.58%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.heroTagline {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.heroSection .timerContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.heroSection .timerContainer .timerBox {
+    flex-basis: 100%;
+    background: var(--greyColor);
+    padding: 14px;
+    color: var(--light-10);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timerBox .number {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.timerBox .unit {
+    font-weight: 700;
+    font-size: 1.2rem;
+}

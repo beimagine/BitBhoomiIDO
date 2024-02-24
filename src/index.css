@@ -1,0 +1,66 @@
+:root {
+  --green-10: #25835B;
+  --green-20: #1D4C38;
+  --green-30: #23483B;
+  --green-40: #012A18;
+  
+  --greyColor: #4F675F;
+  --lightGrey:#858585;
+
+  --blueColor:#0EABF1;
+  --darkBlue:#111A72;
+
+  --light-10: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: white;
+  background: var(--green-40);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.heading{
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.downloadBtn {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--light-10);
+  border: 2px solid var(--light-10);
+  outline: none;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

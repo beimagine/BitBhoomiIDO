@@ -1,0 +1,28 @@
+.footerSection {
+    padding: 3rem 3rem 1rem;
+    background: var(--darkBlue);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainer span {
+    width: 15%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcons img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.footerSection p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}

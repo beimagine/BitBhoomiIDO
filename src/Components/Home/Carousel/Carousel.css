@@ -1,0 +1,8 @@
+.carouselSection .slick-track {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.sliderCard {
+    height: 16rem;
+}
