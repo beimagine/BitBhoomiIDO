@@ -71,6 +71,7 @@ img {
   gap: 12px;
   outline: none;
   cursor: pointer;
+  margin: 3rem auto;
 }
 
 .document {
@@ -81,10 +82,6 @@ img {
 
 .document img {
   object-fit: contain;
-}
-
-.downloadBtn {
-  margin: 3rem auto;
 }
 
 /* MEDIA QUERY */

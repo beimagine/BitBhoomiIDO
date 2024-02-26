@@ -6,7 +6,7 @@ const Tokenomics = () => {
         <>
             <section className="tokenomicsSection">
                 <h1 className="heading">Tokenomics</h1>
-                <div className='document'>
+                <div className="tokenomicsDoc">
                     <img src="/tokenomics.png" alt="" />
                 </div>
                 <div className="downloadBtnDiv">
