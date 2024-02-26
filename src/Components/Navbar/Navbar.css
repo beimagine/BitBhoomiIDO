@@ -13,10 +13,10 @@
 }
 
 .linksContainer {
-    width: 30%;
-    min-width: 36%;
+    width: 50%;
+    /* min-width: 36%; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 4rem;
     padding: 4px;
 }
@@ -133,6 +133,7 @@
 
     .linksContainer {
         gap: 3rem;
+        width:45%;
     }
 }
 
