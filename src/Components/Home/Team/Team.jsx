@@ -8,17 +8,17 @@ const Team = () => {
                 <h1 className="heading">Team</h1>
                 <div className="teamMembersContainer">
                     <div className="teamMember">
-                        <div></div>
+                        <img src='/T1.svg'></img>
                         <p>Lorem Ipsum</p>
                         <h3>Name</h3>
                     </div>
                     <div className="teamMember">
-                        <div></div>
+                        <img src='/T11.svg'></img>
                         <p>Lorem Ipsum</p>
                         <h3>Name</h3>
                     </div>
                     <div className="teamMember">
-                        <div></div>
+                        <img src='/T2.svg'></img>
                         <p>Lorem Ipsum</p>
                         <h3>Name</h3>
                     </div>

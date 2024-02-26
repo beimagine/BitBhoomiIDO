@@ -1,9 +1,10 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
     const mobileNavElement = useRef();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [navbarStyle, setNavbarStyle] = useState({ backgroundColor: 'transparent' });
 
     const openMobileNav = () => {
         if (mobileNavElement.current)
@@ -16,8 +17,22 @@ const Navbar = () => {
             mobileNavElement.current.style.width = "";
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            setNavbarStyle({ backgroundColor: scrollY > 0 ? 'var(--green-40)' : 'transparent' });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
-        <nav className='navbar' onMouseLeave={()=>setIsDropdownOpen(false)}>
+        <nav className="navbar" style={navbarStyle} onMouseLeave={()=>setIsDropdownOpen(false)}>
             <span>
                 <img src="/logo_white.png" alt="BitBhoomi_logo" className="logoImg" />
             </span>

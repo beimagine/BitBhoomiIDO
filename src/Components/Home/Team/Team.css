@@ -17,14 +17,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
-.teamMember div {
+/* .teamMember div {
     background: var(--light-10);
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
+} */
+
+.teamMember img{
+    width: 10rem;
 }
 
 .teamMember h3 {

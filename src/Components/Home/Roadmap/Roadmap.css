@@ -59,6 +59,10 @@
     width: 100%;
 }
 
+.Q2 h3{
+    text-align: right;
+}
+
 .vertical-timeline-element-icon {
     box-shadow: none;
 }
@@ -68,5 +72,17 @@
 @media only screen and (max-width:600px) {
     .roadmapSection {
         padding: 4rem 1rem;
+    }
+}
+
+@media only screen and (max-width:1170px) {
+    .Q2{
+        align-items: flex-start;
+    }
+    .Q2 h3{
+        text-align: left;
+    }
+    .lastDot{
+        top: 48px;
     }
 }
