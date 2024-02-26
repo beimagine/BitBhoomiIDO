@@ -1,11 +1,11 @@
 import React from 'react';
-import './WhitePaper.css';
 
 const WhitePaper = () => {
     const handleDownload = () => {
-        const filePath = '/BitBhoomi White Paper.pdf';
+        const filePath = 'https://drive.google.com/file/d/1FTqH52Dfqa1db7cOtqCdtAEyYkqWtakM/view?usp=sharing';
         const link = document.createElement('a');
         link.href = filePath;
+        link.target = "_blank";
         link.setAttribute('download', 'BitBhoomi White Paper.pdf');
         document.body.appendChild(link);
         link.click();
@@ -14,12 +14,17 @@ const WhitePaper = () => {
 
     return (
         <>
-            <section className="paperSection">
+            <section className="section">
                 <h1 className="heading">White Paper</h1>
-                <div className="paper">
-                    <img src="/white_paper.jpg" alt="BitBhoomi_white_paper" />
+                <div className="document">
+                    <img src="/paper.png" alt="BitBhoomi_white_paper" />
                 </div>
-                <button className="downloadBtn" onClick={handleDownload}>Download</button>
+                <div className="downloadBtnDiv">
+                    <button className="downloadBtn" onClick={handleDownload}>
+                        Download
+                        <img src="/download.png" alt="download_icon" />
+                    </button>
+                </div>
             </section>
         </>
     )

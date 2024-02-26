@@ -2,7 +2,7 @@
     height: calc(100vh - 100px);
     width: 60%;
     margin: auto;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +47,63 @@
     font-weight: 700;
     font-size: 1.8rem;
 }
+
 .timerBox .unit {
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:1200px) {
+    .heroSection {
+        width: 90%;
+    }
+
+    .heroSection .heroMaintext {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .heroSection .heroMaintext {
+        font-size: 3.5rem;
+    }
+
+    .heroTagline {
+        font-size: 1.4rem;
+    }
+
+    .timerBox .number {
+        font-size: 1.2rem;
+    }
+
+    .timerBox .unit {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .heroSection {
+        padding:0 1rem;
+    }
+    .heroSection .heroMaintext {
+        font-size: 3.2rem;
+    }
+
+    .heroTagline {
+        font-size: 1.2rem;
+    }
+
+    .heroSection .timerContainer {
+        gap: 6px;
+    }
+
+    .timerBox .number {
+        font-size: 1rem;
+    }
+
+    .timerBox .unit {
+        font-size: 1rem;
+    }
 }

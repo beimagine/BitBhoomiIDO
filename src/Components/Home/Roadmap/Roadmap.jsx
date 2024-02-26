@@ -7,21 +7,18 @@ const contentStyle = { background: 'transparent', color: '#fff' };
 const contentArrowStyle = { borderRight: '7px solid  var(--green-30' };
 const iconStyle = {
     background: 'linear-gradient(141deg, rgba(20, 115, 204, 1) 0%, rgba(25, 87, 144, 1) 100%)',
-    color: '#fff'
+    // color: '#fff'
 }
 
 const Roadmap = () => {
     return (
         <>
-            <section style={{
-                padding: '4rem',
-                background: 'linear-gradient(180deg, rgb(8, 48, 32), rgb(3, 75, 9))'
-            }}>
+            <section className='roadmapSection'>
                 <h1 className="heading">Roadmap</h1>
 
                 <VerticalTimeline>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
+                        className="vertical-timeline-element--work dot-1"
                         contentStyle={contentStyle}
                         contentArrowStyle={contentArrowStyle}
                         iconStyle={iconStyle}

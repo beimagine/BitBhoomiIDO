@@ -1,0 +1,18 @@
+.tokenomicsSection {
+    background: #034C09;
+    padding: 4rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:900px) {
+    .tokenomicsSection {
+        padding: 4rem 2rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .tokenomicsSection {
+        padding: 4rem 1rem;
+    }
+}

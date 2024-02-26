@@ -1,6 +1,6 @@
 .tokenSaleDetailsSection {
-    margin: 5rem 0;
-    padding: 0 4rem;
+    /* margin: 5rem 0;
+    padding: 0 4rem; */
     display: flex;
     flex-direction: column;
 }
@@ -18,4 +18,11 @@
     justify-content: space-between;
     align-items: center;
     padding:1.5rem;
+}
+
+@media only screen and (max-width:450px) {
+    .tokenDetailsContainer {
+        font-size: 1rem;
+        padding: 1.5rem 0.5rem;
+    }
 }

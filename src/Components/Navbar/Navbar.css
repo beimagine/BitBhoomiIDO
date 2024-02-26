@@ -11,17 +11,25 @@
     background-repeat: no-repeat, no-repeat;
 }
 
-.navbar img {
+.logoImg {
     height: 6rem;
     cursor: pointer;
 }
 
 .linksContainer {
     width: 30%;
+    min-width: 36%;
     display: flex;
     justify-content: center;
     gap: 4rem;
     padding: 4px;
+}
+
+.hamburgerImg {
+    display: none;
+    height: 1.8rem;
+    width: 2rem;
+    filter: invert(100%);
 }
 
 .navLinks {
@@ -32,6 +40,10 @@
     font-weight: 600;
     color: var(--light-10);
     cursor: pointer;
+}
+
+.btnContainer {
+    position: relative;
 }
 
 .walletBtn {
@@ -47,13 +59,105 @@
 }
 
 .walletBtn:hover {
-    background: linear-gradient(-272deg, #9480EE, #24CF8A, #49A3B2, #9480EE);
-    border:none;
+    background: linear-gradient(90deg, #A27DF8 5.09%, #9480EE 8.98%, #5F8CC8 24.07%, #3FB0A7 43.06%, #24CF8A 62.04%, #8A62F3 81.02%, #49A3B2 100%);
+    border: 1px solid #7775E0;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3.5rem;
+    right: 8px;
+    background-color: #82908D;
+    border-radius: 10px;
+}
+
+.mobileDropdown {
+    top: 16.5rem;
+    right: 3rem;
+}
+
+.dropdown span {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown hr {
+    border: 1px solid #5A5D5C;
+}
+
+.dropdown img {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.dropdown button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--light-10);
+    cursor: pointer;
+}
+
+.mobileNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    filter: invert(100%);
+}
+
+@media only screen and (max-width:1200px) {
+    .navbar {
+        padding: 3rem 1rem;
+    }
+
+    .linksContainer {
+        gap: 3rem;
+    }
 }
 
 @media only screen and (max-width:900px) {
+    .linksContainer {
+        justify-content: flex-end;
+    }
+
+    .linksContainer button {
+        display: none;
+    }
+
+    .hamburgerImg {
+        display: block;
+        height: 1.8rem;
+        width: 2rem;
+        filter: invert(100%);
+    }
+}
+
+@media only screen and (max-width:600px) {
     .navbar {
-        justify-content: center;
-        margin-bottom: 1.5rem;
+        padding: 1rem;
     }
 }

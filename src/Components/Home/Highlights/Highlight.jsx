@@ -13,11 +13,10 @@ const Highlight = () => {
     }
 
     return (
-        <section className="highlightSection">
+        <section className="section">
             <h1 className="heading">Highlights</h1>
             <div className="hightlightsMainContainer">
                 <div className="hightlightsContainer">
-
                     <div>
                         <span className="hightlight">
                             <h3>Holistic Solutions</h3>

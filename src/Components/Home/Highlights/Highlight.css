@@ -1,8 +1,3 @@
-.highlightSection {
-    margin: 5rem 0;
-    padding: 0 4rem;
-}
-
 .hightlightsMainContainer {
     display: flex;
     gap: 2.5rem;
@@ -35,12 +30,13 @@
     background: var(--light-10);
     border-radius: 50%;
     padding: 5px;
+    cursor: pointer;
 }
 
 .highlightInfo {
     padding: 1rem;
     background: var(--lightGrey);
-    color:black;
+    color: black;
 }
 
 .highlightInfo h3 {
@@ -83,4 +79,21 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:600px) {
+    .hightlightsMainContainer {
+        flex-direction: column;
+    }
+
+    .hightlightsContainer,
+    .fundContainer {
+        width: 100%;
+    }
+
+    .fundInfo {
+        padding-bottom: 5rem;
+    }
 }

@@ -3,12 +3,12 @@
   --green-20: #1D4C38;
   --green-30: #23483B;
   --green-40: #012A18;
-  
-  --greyColor: #4F675F;
-  --lightGrey:#858585;
 
-  --blueColor:#0EABF1;
-  --darkBlue:#111A72;
+  --lightGrey: #858585;
+  --greyColor: #4F675F;
+
+  --blueColor: #0EABF1;
+  --darkBlue: #111A72;
 
   --light-10: white;
 }
@@ -40,10 +40,19 @@ img {
   width: 100%;
 }
 
-.heading{
+.section {
+  margin: 5rem 0;
+  padding: 0 4rem;
+}
+
+.heading {
   margin-bottom: 3rem;
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+
+.downloadBtnDiv img {
+  height: 1.1rem;
 }
 
 .downloadBtn {
@@ -55,12 +64,43 @@ img {
   background: transparent;
   color: var(--light-10);
   border: 2px solid var(--light-10);
+  display: flex;
+  gap: 12px;
   outline: none;
   cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.document {
+  height: 70vh;
+  width: 55%;
+  margin-bottom: 1.5rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:1200px) {
+  .document {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .section {
+    padding: 0 2rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .section {
+    padding: 0 1rem;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .downloadBtn {
+    margin:3rem auto;
   }
 }

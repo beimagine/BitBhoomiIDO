@@ -3,7 +3,7 @@ import './TokenSaleDetails.css';
 
 const TokenSaleDetails = () => {
     return (
-        <section className="tokenSaleDetailsSection">
+        <section className="section tokenSaleDetailsSection">
             <span className="tokenSaleHeadContainer">
                 <h1>Token Sale Details</h1>
             </span>

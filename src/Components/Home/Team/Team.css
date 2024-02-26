@@ -3,14 +3,37 @@
     padding: 0 4rem;
 }
 
-.teamMembersContainer{
+.teamMembersContainer {
     display: flex;
     justify-content: center;
-    gap:2rem;
+    flex-wrap: wrap;
 }
 
-.teamMember{
+.teamMember {
+    height: 20rem;
+    width: 18%;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.teamMember div {
     background: var(--light-10);
-    height:20rem;
-    width:20%;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.teamMember h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.teamMember p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #d9d9d9;
 }

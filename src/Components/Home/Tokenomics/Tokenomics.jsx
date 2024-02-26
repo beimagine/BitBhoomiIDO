@@ -1,18 +1,20 @@
 import React from 'react';
+import './Tokenomics.css';
 
 const Tokenomics = () => {
     return (
         <>
-            <section style={{
-                // margin: '5rem 0',
-                padding: '4rem',
-                background:'#034C09',
-            }}>
+            <section className="tokenomicsSection">
                 <h1 className="heading">Tokenomics</h1>
-                <div style={{width:'70%'}}>
+                <div className='document'>
                     <img src="/tokenomics.png" alt="" />
                 </div>
-                <button className="downloadBtn">Download</button>
+                <div className="downloadBtnDiv">
+                    <button className="downloadBtn">
+                        Download
+                        <img src="/download.png" alt="download_icon" />
+                    </button>
+                </div>
             </section>
         </>
     )
