@@ -4,7 +4,7 @@
     height: calc(100vh - 100px);
     width: 60%;
     margin: auto;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
-    font-family: "Roboto Slab" ,serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 900 !important;
     letter-spacing: 2px;
 }
@@ -38,22 +38,17 @@
 }
 
 .colon {
-    font-size: 96px;
-    display: flex;
+    font-size: 3.5rem;
 }
 
 .heroSection .timerContainer .timerBox {
     flex-basis: 100%;
     background: var(--greyColor);
-    padding: 14px;
+    padding: 0.5rem 1.5rem;
     color: var(--light-10);
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.timerBox {
-    padding: 25px 35px !important;
 }
 
 .timerBox .number {
@@ -88,8 +83,19 @@
         font-size: 1.4rem;
     }
 
+    .heroSection .timerContainer {
+        gap: 10px;
+    }
+    .heroSection .timerContainer .timerBox {
+        padding: 10px;
+    }
+
     .timerBox .number {
         font-size: 1.2rem;
+    }
+
+    .colon {
+        font-size: 2.5rem;
     }
 
     .timerBox .unit {
@@ -98,12 +104,11 @@
 }
 
 @media only screen and (max-width:400px) {
-    .heroSection {
-        padding: 0 1rem;
+    .heroSection  {
+        padding: 0 10px;
     }
-
     .heroSection .heroMaintext {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     .heroTagline {
