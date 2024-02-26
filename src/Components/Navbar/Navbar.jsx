@@ -4,11 +4,11 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <span>
+            <div className='navImg'>
                 <img src="/logo_white.png" alt="BitBhoomi_logo" />
-            </span>
+            </div>
             <div className="linksContainer">
-                <button className="navLinks">Home</button>
+                <button className="navLinks">HOME</button>
                 <button className="navLinks">IDO</button>
                 <button className="walletBtn">Connect Wallet</button>
             </div>

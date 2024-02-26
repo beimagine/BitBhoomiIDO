@@ -19,17 +19,17 @@ const Hero = () => {
                         <h2 className="number">12</h2>
                         <h4 className="unit">Days</h4>
                     </div>
-                    <h2 variant='h2'>:</h2>
+                    <h2 className='colon' variant='h2'>:</h2>
                     <div className="timerBox">
                         <h2 variant="h4" className="number">20</h2>
                         <h4 variant="h6" className="unit">Hours</h4>
                     </div>
-                    <h2 variant='h2'>:</h2>
+                    <h2 className='colon' variant='h2'>:</h2>
                     <div className="timerBox">
                         <h2 variant="h4" className="number">32</h2>
                         <h4 variant="h6" className="unit">Mins</h4>
                     </div>
-                    <h2 variant='h2'>:</h2>
+                    <h2 className='colon' variant='h2'>:</h2>
                     <div className="timerBox">
                         <h2 variant="h4" className="number">12</h2>
                         <h4 variant="h6" className="unit">Sec</h4>

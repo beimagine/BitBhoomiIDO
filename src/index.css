@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 :root {
   --green-10: #25835B;
   --green-20: #1D4C38;
@@ -28,6 +29,7 @@ body {
 body {
   color: white;
   background: var(--green-40);
+  font-family: "Inter" , sans-serif;
 }
 
 a {

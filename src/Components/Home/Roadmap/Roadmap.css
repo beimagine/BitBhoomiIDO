@@ -21,6 +21,9 @@
 .vertical-timeline-element-content {
     box-shadow: none;
 }
+.lastDot{
+    top: 20px;
+}
 
 .leftImage {
     position: absolute;

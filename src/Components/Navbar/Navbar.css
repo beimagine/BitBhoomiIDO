@@ -5,15 +5,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 3rem;
-    background: url(bg-1.png), url(bg-2.png);
-    background-position: center;
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
 }
 
-.navbar img {
-    height: 6rem;
+.navImg{
     cursor: pointer;
+    height: 7rem;
 }
 
 .linksContainer {
@@ -28,10 +24,11 @@
     background: none;
     outline: none;
     border: none;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     color: var(--light-10);
     cursor: pointer;
+    font-family: "Inter";
 }
 
 .walletBtn {
@@ -40,8 +37,8 @@
     border: 2px solid var(--light-10);
     padding: 0.5rem 1.2rem;
     width: fit-content;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 900;
     border-radius: 2rem;
     cursor: pointer;
 }

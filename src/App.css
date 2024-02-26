@@ -1,0 +1,8 @@
+.BGStyle {
+    background: center center/cover no-repeat;
+    background-image: url(bg-1.png), url(bg-2.png),
+        radial-gradient(88.58% 95.3% at 50% 29.37%, #022A19 0%, #012B18 16.09%, #022A19 27.75%, #06221D 46.67%, #0A3526 55.56%, #171717 71.61%, #13221D 100%) ;
+    background-position: 0 10%;
+    /* background: ; */
+    background-size: contain, contain, cover;
+}

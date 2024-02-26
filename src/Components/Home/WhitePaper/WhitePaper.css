@@ -4,8 +4,13 @@
 }
 
 .paper {
-    height: 70vh;
-    width:55%;
-    /* background: var(--light-10); */
+    height: 90vh;
+    width:100%;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.paper img{
+    fill: white;
+    object-fit: fill;
 }
