@@ -17,6 +17,14 @@ const Navbar = () => {
             mobileNavElement.current.style.width = "";
     }
 
+    const scrollToTop = () => {
+        if (window !== 'undefined')
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+    }
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
@@ -32,12 +40,12 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar" style={navbarStyle} onMouseLeave={()=>setIsDropdownOpen(false)}>
+        <nav className="navbar" style={navbarStyle} onMouseLeave={() => setIsDropdownOpen(false)}>
             <span>
                 <img src="/logo_white.png" alt="BitBhoomi_logo" className="logoImg" />
             </span>
             <div className="linksContainer">
-                <button className="navLinks">HOME</button>
+                <button className="navLinks" onClick={scrollToTop}>HOME</button>
                 <button className="navLinks">IDO</button>
                 <div className="btnContainer">
                     <button className="walletBtn" onMouseEnter={() => setIsDropdownOpen(true)}>Connect Wallet</button>
