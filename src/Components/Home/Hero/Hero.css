@@ -14,7 +14,7 @@
 }
 
 .heroSection .heroMaintext {
-    font-size: 5.8rem;
+    font-size: 5rem;
     background: linear-gradient(95.33deg, #AD8CF8 11.46%, #9B73F7 16.35%, #8D5FF6 21.24%, #7770E2 26.14%, #7178DB 31.03%, #6288CB 35.92%, #5E8DC7 40.81%, #509CB9 45.7%, #529ABA 50.59%, #43AAAC 55.48%, #37B89F 60.37%, #2AC591 65.27%, #20D386 70.16%, #30C197 75.05%, #32BD99 79.94%, #318B86 84.83%, #49A3B2 89.72%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -58,12 +58,12 @@
 
 .timerBox .number {
     font-weight: 900;
-    font-size: 48px;
+    font-size: 2rem;
 }
 
 .timerBox .unit {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }
 

@@ -1,3 +1,8 @@
+.carouselSection {
+    margin: 2rem 0;
+    ;
+}
+
 .carouselSection .slick-track {
     display: flex;
     gap: 2.5rem;
