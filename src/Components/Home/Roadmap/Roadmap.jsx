@@ -7,7 +7,7 @@ const contentStyle = { background: 'transparent', color: '#fff' };
 const contentArrowStyle = { borderRight: '7px solid  var(--green-30' };
 const iconStyle = {
     background: 'linear-gradient(141deg, rgba(20, 115, 204, 1) 0%, rgba(25, 87, 144, 1) 100%)',
-    // color: '#fff'
+    color: '#fff'
 }
 
 const Roadmap = () => {
@@ -18,13 +18,14 @@ const Roadmap = () => {
 
                 <VerticalTimeline>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work dot-1"
+                        className="vertical-timeline-element--work Dot1"
                         contentStyle={contentStyle}
                         contentArrowStyle={contentArrowStyle}
                         iconStyle={iconStyle}
                         position="right"
                     >
-                        <img src="/roadmap-1.svg" alt="" className="leftImage" />
+                        <img src="/roadmap-1.svg" alt="" style={{ height: '28rem', top:"90px" }}  className="leftImage" />
+                        <div className='Q1'>
                         <h1>Quarter 1</h1>
                         <h3>BitBhoomi Beta Launch</h3>
                         <p>The beta version of BitBhoomi will be released, allowing users to test and provide feedback on the platform before its official launch.</p>
@@ -32,6 +33,7 @@ const Roadmap = () => {
                         <p>The projects token will be offered for sale to the community through a decentralized exchange. This will allow community members to participate in the projects growth.</p>
                         <h3>Token Listing on Decentralized Exchange</h3>
                         <p>After the IDO, the projects token will be listed on a decentralized exchange, making it available for trading among users.</p>
+                        </div>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -42,6 +44,7 @@ const Roadmap = () => {
                         position="left"
                     >
                         <img src="/roadmap-2.svg" alt="" className="rightImage" />
+                        <div className='Q2'>
                         <h1>Quarter 2</h1>
                         <h3>BitBhoomi Mainnet Launch</h3>
                         <p>This is the official launch of the BitBhoomi platform on the mainnet, meaning it will be fully operational and accessible to users.</p>
@@ -49,6 +52,7 @@ const Roadmap = () => {
                         <p>The projects token will be listed on centralized exchanges, providing more opportunities for users to trade and access the token.</p>
                         <h3>Onboarding of Projects</h3>
                         <p>Partnerships and Collaborations</p>
+                        </div>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -58,7 +62,7 @@ const Roadmap = () => {
                         iconStyle={iconStyle}
                         position="right"
                     >
-                        <img src="/roadmap-3.svg" alt="" style={{ height: '21rem' }} className="leftImage" />
+                        <img src="/roadmap-3.svg" alt="" style={{ height: '33rem' }} className="leftImage" />
                         <h1>Quarter 3</h1>
                         <h3>Global Expansion</h3>
                         <h3>NFT Trading Marketplace</h3>

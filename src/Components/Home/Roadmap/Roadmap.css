@@ -1,10 +1,6 @@
 .roadmapSection {
     padding: 4rem;
-    background: linear-gradient(180deg, rgb(8, 48, 32), rgb(3, 75, 9));
-}
-
-.dot-1{
-    top: -40px;
+    background: linear-gradient(180deg, rgb(8, 48, 32), rgb(3, 75, 9))
 }
 
 .vertical-timeline-element--work h1 {
@@ -30,22 +26,41 @@
 .vertical-timeline-element-content {
     box-shadow: none;
 }
-.lastDot{
+
+.lastDot {
     top: 20px;
 }
 
-.vertical-timeline-element-icon{
-    box-shadow: none;
+.Dot1 {
+    top: -40px;
 }
 
 .leftImage {
     position: absolute;
-    left: -45rem;
+    /* left: -45rem; */
+    left: -135%;
 }
 
 .rightImage {
     position: absolute;
-    right: -45rem;
+    right: -135%;
+}
+
+.Q1 {
+    width: 100%;
+    text-align: justify;
+}
+
+.Q2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: justify;
+    width: 100%;
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: none;
 }
 
 /* MEDIA QUERY */
