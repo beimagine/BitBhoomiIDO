@@ -16,10 +16,18 @@
     .tokenomicsSection {
         padding: 4rem 2rem;
     }
+
+    .tokenomicsDoc {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width:600px) {
     .tokenomicsSection {
         padding: 4rem 1rem;
+    }
+
+    .tokenomicsDoc {
+        width: 100%;
     }
 }
