@@ -22,7 +22,7 @@ const Navbar = () => {
                 <img src="/logo_white.png" alt="BitBhoomi_logo" className="logoImg" />
             </span>
             <div className="linksContainer">
-                <button className="navLinks">Home</button>
+                <button className="navLinks">HOME</button>
                 <button className="navLinks">IDO</button>
                 <div className="btnContainer">
                     <button className="walletBtn" onMouseEnter={() => setIsDropdownOpen(true)}>Connect Wallet</button>

@@ -1,0 +1,16 @@
+.paperSection {
+    margin: 5rem 0;
+    padding: 0 4rem;
+}
+
+.paper {
+    height: 90vh;
+    width:100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.paper img{
+    fill: white;
+    object-fit: fill;
+}

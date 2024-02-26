@@ -74,7 +74,12 @@ const Roadmap = () => {
                         <h1>Quarter 4</h1>
                         <h3>Platform Scaling</h3>
                     </VerticalTimelineElement>
+                    
 
+                    <VerticalTimelineElement
+                    className='lastDot'
+                    iconStyle={iconStyle}
+                    />
                 </VerticalTimeline>
             </section >
         </>

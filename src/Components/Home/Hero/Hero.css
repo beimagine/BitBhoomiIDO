@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 .heroSection {
     height: calc(100vh - 100px);
     width: 60%;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom:2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,15 +15,17 @@
 
 .heroSection .heroMaintext {
     font-size: 5.8rem;
-    /* background: linear-gradient(to right, #7c43ff, #17bc83); */
-    background: linear-gradient(-272deg, #8D5FF6 14.39%, #6288CB 31.42%, #2AC591 59.81%, #49A3B2 83.58%);
+    background: linear-gradient(95.33deg, #AD8CF8 11.46%, #9B73F7 16.35%, #8D5FF6 21.24%, #7770E2 26.14%, #7178DB 31.03%, #6288CB 35.92%, #5E8DC7 40.81%, #509CB9 45.7%, #529ABA 50.59%, #43AAAC 55.48%, #37B89F 60.37%, #2AC591 65.27%, #20D386 70.16%, #30C197 75.05%, #32BD99 79.94%, #318B86 84.83%, #49A3B2 89.72%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
+    font-family: "Roboto Slab" ,serif;
+    font-weight: 900 !important;
+    letter-spacing: 2px;
 }
 
 .heroTagline {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.8rem;
 }
 
@@ -31,6 +35,11 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.colon {
+    font-size: 96px;
+    display: flex;
 }
 
 .heroSection .timerContainer .timerBox {
@@ -43,14 +52,19 @@
     gap: 4px;
 }
 
+.timerBox {
+    padding: 25px 35px !important;
+}
+
 .timerBox .number {
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-weight: 900;
+    font-size: 48px;
 }
 
 .timerBox .unit {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 /* MEDIA QUERY */
@@ -85,8 +99,9 @@
 
 @media only screen and (max-width:400px) {
     .heroSection {
-        padding:0 1rem;
+        padding: 0 1rem;
     }
+
     .heroSection .heroMaintext {
         font-size: 3.2rem;
     }
