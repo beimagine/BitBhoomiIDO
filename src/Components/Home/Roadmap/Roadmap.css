@@ -37,7 +37,6 @@
 
 .leftImage {
     position: absolute;
-    /* left: -45rem; */
     left: -135%;
 }
 
@@ -59,7 +58,7 @@
     width: 100%;
 }
 
-.Q2 h3{
+.Q2 h3 {
     text-align: right;
 }
 
@@ -76,13 +75,15 @@
 }
 
 @media only screen and (max-width:1170px) {
-    .Q2{
+    .Q2 {
         align-items: flex-start;
     }
-    .Q2 h3{
+
+    .Q2 h3 {
         text-align: left;
     }
-    .lastDot{
+
+    .lastDot {
         top: 48px;
     }
 }

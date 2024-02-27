@@ -8,19 +8,33 @@
     padding: 1.2rem;
 }
 
-.tokenDetailsContainer{
+.tokenDetailsContainer {
     font-size: 1.2rem;
     background: var(--green-20);
-    border-top:1px solid var(--green-10);
+    border-top: 1px solid var(--green-10);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1.5rem;
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width:600px) {
+    .tokenDetailsContainer h1 {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:450px) {
     .tokenDetailsContainer {
         font-size: 1rem;
         padding: 1.5rem 0.5rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .tokenDetailsContainer {
+        padding: 1rem 0.5rem;
+        flex-direction: column;
+        gap: 14px;
     }
 }

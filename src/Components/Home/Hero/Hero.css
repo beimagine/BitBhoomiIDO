@@ -4,7 +4,7 @@
     height: calc(100vh - 100px);
     width: 60%;
     margin: auto;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -87,6 +87,7 @@
     .heroSection .timerContainer {
         gap: 10px;
     }
+
     .heroSection .timerContainer .timerBox {
         padding: 10px;
     }
@@ -123,5 +124,24 @@
 
     .timerBox .unit {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .heroSection .heroMaintext {
+        font-size: 2rem;
+    }
+
+    .heroSection .timerContainer .timerBox {
+        background: none;
+        padding: 2px;
+    }
+
+    .colon {
+        font-size: 1.5rem;
+    }
+
+    .timerBox .unit {
+        font-size: 12px;
     }
 }

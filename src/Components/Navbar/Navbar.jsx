@@ -18,6 +18,7 @@ const Navbar = () => {
     }
 
     const scrollToTop = () => {
+        closeMobileNav()
         if (window !== 'undefined')
             window.scrollTo({
                 top: 0,
@@ -67,9 +68,11 @@ const Navbar = () => {
                 </div>
             </div>
 
+            {/* MOBILE NAVBAR */}
+
             <div className="mobileNav" ref={mobileNavElement}>
                 <img src="/close.png" alt="closeIcon" onClick={closeMobileNav} className="closeIcon" />
-                <button className="navLinks">Home</button>
+                <button className="navLinks" onClick={scrollToTop}>Home</button>
                 <button className="navLinks">IDO</button>
                 <button
                     className="walletBtn"

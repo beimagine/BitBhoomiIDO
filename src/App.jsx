@@ -3,17 +3,15 @@ import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Home/Hero/Hero';
 import Carousel from './Components/Home/Carousel/Carousel';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import "./App.css"
 
 function App() {
   return (
     <>
-      <div className='BGStyle' >
-        <div className='radial'>
-          <Navbar />
-          <Hero />
-        </div>
+      <div className='bgStyle' >
+        <Navbar />
+        <Hero />
         <Carousel />
       </div>
       <Home />

@@ -7,22 +7,16 @@
     padding: 3rem;
     position: fixed;
     z-index: 2;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
-.navbar.Scrolled{
-    /* background-color: var(--green-40); */
-    background-color: #000;
-}
-
-.logoImg{
+.logoImg {
     cursor: pointer;
     height: 7rem;
 }
 
 .linksContainer {
     width: 50%;
-    /* min-width: 36%; */
     display: flex;
     justify-content: flex-end;
     gap: 4rem;
@@ -134,6 +128,8 @@
     filter: invert(100%);
 }
 
+/* MEDIA QUERY */
+
 @media only screen and (max-width:1200px) {
     .navbar {
         padding: 3rem 1rem;
@@ -141,7 +137,7 @@
 
     .linksContainer {
         gap: 3rem;
-        width:45%;
+        width: 45%;
     }
 }
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Highlight from './Highlights/Highlight';
 import TokenSaleDetails from './TokenSaleDetails/TokenSaleDetails';
 import Product from './Product/Product';
