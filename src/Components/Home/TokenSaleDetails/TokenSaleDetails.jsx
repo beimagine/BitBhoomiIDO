@@ -5,8 +5,8 @@ const tokenDetails = [
     { label: 'Price Per Token', value: '$0.10' },
     { label: 'Initial Market Cap', value: '$1m' },
     { label: 'Total Max Supply', value: '$100,000,000' },
-    { label: 'Sale Start Time', value: 'March 25th, 6pm' },
-    { label: 'Sale End Time', value: 'April 25th, 6pm' },
+    { label: 'Sale Start Time', value: 'March 25th, 12:30pm UTC' },
+    { label: 'Sale End Time', value: 'April 25th, 12:30pm UTC' },
     { label: 'Total Distribution Time', value: '31 days' },
 ];
 
