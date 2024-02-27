@@ -1,7 +1,7 @@
 export const highlightItems = [
     {
         key: 'holistic',
-        title: 'Holistic Solutions',
+        title: 'Holistic Solution',
         content: 'BitBhoomi represents a holistic solution that seamlessly integrates technology and environmental stewardship, paving the way for a more sustainable future for generations to come.'
     },
     {

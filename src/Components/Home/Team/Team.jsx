@@ -18,7 +18,7 @@ const Team = () => {
                         </div>
                         <p>{member.role}</p>
                         <h3>{member.name}</h3>
-                        {member.experience && <span>{member.experience}</span>}
+                        {member.experience && <span><i>{member.experience}</i></span>}
                     </div>
                 ))}
             </div>

@@ -34,7 +34,7 @@ const Highlight = () => {
                                     openedAccordian === item.key &&
                                     <div className="highlightInfo">
                                         <span >
-                                            <h3>{item.title}</h3>
+                                            {/* <h3>{item.title}</h3> */}
                                             <span
                                                 className='arrowWrapper'
                                                 onClick={handleCloseAccordian}
