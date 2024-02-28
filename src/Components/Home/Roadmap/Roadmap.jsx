@@ -82,6 +82,8 @@ const Roadmap = () => {
                     >
                         <h1>Quarter 4</h1>
                         <h3>Platform Scaling</h3>
+                        <h3>BitBhoomiAI: Carbon Credits prediction Tool Launch</h3>
+                        <h3>Governance Model</h3>
                     </VerticalTimelineElement>
 
 
