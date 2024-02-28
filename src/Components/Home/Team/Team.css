@@ -11,13 +11,14 @@
 }
 
 .teamMember {
-    height: 17rem;
-    width: 18%;
+    height: 22rem;
+    width: 20%;
     min-width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    text-align: center;
     gap: 10px;
 }
 

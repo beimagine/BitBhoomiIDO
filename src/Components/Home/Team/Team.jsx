@@ -1,9 +1,24 @@
 import './Team.css';
 
 const teamMembers = [
-    { name: 'Nikhil Goyal', role: 'Founder and CEO', image: '/T1.svg' },
-    { name: 'Anthony Raj', role: 'Co-Founder and CTO', image: '/T11.svg', experience: '(Ex-Microsoft and Cisco)' },
-    { name: 'Alejandro Giuffrida', role: 'COO', image: '/T2.svg' },
+    {
+        name: 'Nikhil Goyal',
+        role: 'Founder and CEO',
+        image: '/T1.svg',
+        experience: '(Serial Entrepreneur)'
+    },
+    {
+        name: 'Anthony Raj',
+        role: 'Co-Founder and CTO',
+        image: '/T11.svg',
+        experience: '(Ex-Microsoft and Cisco)'
+    },
+    {
+        name: 'Alejandro Giuffrida',
+        role: 'COO',
+        image: '/T2.svg',
+        experience: '(Former rector of the Champagnat University (Argentina) and president of the Association of Latin American and Caribbean Universities for Integration)'
+    },
 ];
 
 const Team = () => {
