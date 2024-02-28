@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
 
 const galleryImages = [
-    { path: '/gallery/img-1.png' },
-    { path: '/gallery/img-2.png' },
-    { path: '/gallery/img-3.png' },
-    { path: '/gallery/img-4.png' },
-    { path: '/gallery/img-5.png' },
-    { path: '/gallery/img-6.png' },
-    { path: '/gallery/img-7.png' },
+    { path: '/gallery/gallery-1.png' },
+    { path: '/gallery/gallery-2.png' },
+    { path: '/gallery/gallery-3.png' },
+    { path: '/gallery/gallery-4.png' },
+    { path: '/gallery/gallery-5.png' },
+    { path: '/gallery/gallery-6.png' },
+    { path: '/gallery/gallery-7.png' },
 ];
 
 const Carousel = () => {
