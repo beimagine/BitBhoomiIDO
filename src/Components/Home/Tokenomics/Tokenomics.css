@@ -2,32 +2,3 @@
     background: #034C09;
     padding: 4rem;
 }
-
-.tokenomicsDoc {
-    height: 70vh;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 1.5rem;
-}
-
-/* MEDIA QUERY */
-
-@media only screen and (max-width:900px) {
-    .tokenomicsSection {
-        padding: 4rem 2rem;
-    }
-
-    .tokenomicsDoc {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .tokenomicsSection {
-        padding: 4rem 1rem;
-    }
-
-    .tokenomicsDoc {
-        width: 100%;
-    }
-}
