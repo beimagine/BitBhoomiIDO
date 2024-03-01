@@ -2,7 +2,7 @@ import './Tokenomics.css';
 
 const Tokenomics = () => {
     const handleDownload = () => {
-        const filePath = 'https://drive.google.com/file/d/1KcwtSl2sZ35qZ_LpsGPHie1tpbnIFdg8/view?usp=sharing';
+        const filePath = 'https://drive.google.com/file/d/1TABvqFGSf3GZPvnDOde3R582tYEvus4a/view?usp=sharing';
         const link = document.createElement('a');
         link.href = filePath;
         link.target = "_blank";
