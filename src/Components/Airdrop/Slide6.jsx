@@ -1,0 +1,89 @@
+import React, { useContext } from 'react';
+import { MyContext } from '../../App';
+import { useNavigate } from 'react-router-dom';
+import './Slide.css';
+
+const Slide6 = ({ index }) => {
+    const navigate = useNavigate();
+    const { userData, setUserData } = useContext(MyContext);
+
+    // console.log(index)
+
+    const handleSubmitUserDetails = async () => {
+        try {
+            const response = await fetch('http://localhost:5000/user', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json',
+                },
+                body: JSON.stringify(userData)
+            })
+            const res = await response.json();
+            console.log(res);
+
+            if (res.status === 'ok')
+                navigate(`/airdrop/lastSlide`)
+            else if (res.error.name === "ValidationError")
+                alert("Error: Solana wallet address must be 24 digits long!")
+            else
+                alert(res.message)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const handlePrevSlide = () => {
+        navigate('/airdrop/slide5')
+    };
+
+    const handleNextSlide = () => {
+        handleSubmitUserDetails();
+    };
+
+    const handleInputsChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setUserData((prev) => ({ ...prev, [name]: value }));
+    }
+
+    return (
+        <div className='bgStyle' >
+            <section className="slideSection">
+                <div className="imgContainer">
+                    <div className="returnBtnContainer" onClick={handlePrevSlide}>
+                        <img src="/airdrop/arrow-left.png" alt="" />
+                    </div>
+                    <img src="/airdrop/slide-6.png" alt="" className="slideImg" />
+                    <img src="/airdrop/mobile/slide-6.png" alt="" className="slideMobileImg" />
+                </div>
+
+                <div className='questionDiv slide'>
+                    <div className='message'>
+                        And lastly, to receive your Bhoomi tokens, please enter your Solana wallet address below:
+                    </div>
+                    <div className="inputContainer walletInputContainer">
+                        <label htmlFor="">Solana Wallet Address:</label>
+                        <input
+                            type="text"
+                            placeholder="Wallet address"
+                            value={userData.solanaWalletAddress}
+                            name="solanaWalletAddress"
+                            onChange={handleInputsChange}
+                        />
+                    </div>
+                    <div
+                        className="options nextBtn"
+                        style={{ background: "transparent" }}
+                        onClick={handleNextSlide}
+                    >
+                        NEXT
+                        <img src="/airdrop/arrow-right.png" alt="" />
+                    </div>
+                </div>
+            </section >
+        </div>
+    )
+}
+
+export default Slide6;

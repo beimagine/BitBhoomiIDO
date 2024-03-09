@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
     const mobileNavElement = useRef();
+    const navigate = useNavigate();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [navbarStyle, setNavbarStyle] = useState({ backgroundColor: 'transparent' });
 
@@ -18,6 +20,7 @@ const Navbar = () => {
     }
 
     const scrollToTop = () => {
+        navigate('/')
         closeMobileNav()
         if (window !== 'undefined')
             window.scrollTo({
@@ -48,25 +51,27 @@ const Navbar = () => {
             <div className="linksContainer">
                 <button className="navLinks" onClick={scrollToTop}>HOME</button>
                 <button className="navLinks">IDO</button>
-                <div className="btnContainer">
-                    <button className="walletBtn" onMouseEnter={() => setIsDropdownOpen(true)}>Connect Wallet</button>
-                    <img src="/hamburger.png" alt="hamburger_image" onClick={openMobileNav} className="hamburgerImg" />
-                    {
-                        isDropdownOpen &&
-                        <div className="dropdown">
-                            <span>
-                                <img src="/phantom.png" alt="phantom_logo" />
-                                <button>Phantom</button>
-                            </span>
-                            <hr />
-                            <span>
-                                <img src="/solfare.png" alt="solfare_logo" />
-                                <button>Solfare</button>
-                            </span>
-                        </div>
-                    }
-                </div>
+                <button className="navLinks" onClick={() => navigate('/airdrop')}>AIRDROP</button>
             </div>
+            <div className="btnContainer">
+                <button className="walletBtn" onMouseEnter={() => setIsDropdownOpen(true)}>Connect Wallet</button>
+                <img src="/hamburger.png" alt="hamburger_image" onClick={openMobileNav} className="hamburgerImg" />
+                {
+                    isDropdownOpen &&
+                    <div className="dropdown">
+                        <span>
+                            <img src="/phantom.png" alt="phantom_logo" />
+                            <button>Phantom</button>
+                        </span>
+                        <hr />
+                        <span>
+                            <img src="/solfare.png" alt="solfare_logo" />
+                            <button>Solfare</button>
+                        </span>
+                    </div>
+                }
+            </div>
+            {/* </div> */}
 
             {/* MOBILE NAVBAR */}
 
@@ -74,6 +79,7 @@ const Navbar = () => {
                 <img src="/close.png" alt="closeIcon" onClick={closeMobileNav} className="closeIcon" />
                 <button className="navLinks" onClick={scrollToTop}>Home</button>
                 <button className="navLinks">IDO</button>
+                <button className="navLinks" onClick={() => navigate('/airdrop')}>Airdrop</button>
                 <button
                     className="walletBtn"
                     style={{ marginTop: '1rem' }}
@@ -95,7 +101,7 @@ const Navbar = () => {
                     </div>
                 }
             </div>
-        </nav>
+        </nav >
     )
 }
 

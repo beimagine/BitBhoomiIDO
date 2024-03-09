@@ -18,7 +18,8 @@
 .linksContainer {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: center;
     gap: 4rem;
     padding: 4px;
 }
@@ -146,7 +147,8 @@
         justify-content: flex-end;
     }
 
-    .linksContainer button {
+    .linksContainer,
+    .btnContainer .walletBtn {
         display: none;
     }
 

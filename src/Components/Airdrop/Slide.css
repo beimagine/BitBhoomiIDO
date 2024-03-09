@@ -1,0 +1,314 @@
+.slideSection {
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    display: flex;
+    gap: 3rem;
+}
+
+.imgContainer {
+    width: 30%;
+    min-width: 25%;
+    /* height: 100%; */
+}
+
+.returnBtnContainer {
+    height: 3rem;
+    width: 3rem;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3rem;
+    left: 1.5rem;
+    cursor: pointer;
+}
+
+.returnBtnContainer img {
+    height: 75%;
+    width: 75%;
+}
+
+.slideMobileImg {
+    display: none;
+}
+
+.questionDiv {
+    width: 70%;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.question {
+    font-size: 3rem;
+}
+
+.optionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.options {
+    background: linear-gradient(180deg, rgba(234, 234, 234, 0.1) 0%, rgba(153, 153, 153, 0.1) 100%);
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.options h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.nextBtn {
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.nextBtn img {
+    /* transform: scale(0.4);
+    margin: 0 -4rem; */
+    width: 5rem;
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+/* SLIDE5 */
+
+.message {
+    font-size: 2.5rem;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.slide .inputContainer {
+    display: flex;
+    gap: 2rem;
+    margin: 0 1rem;
+    /* margin-bottom: 2rem; */
+}
+
+.inputContainer label {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.inputContainer input {
+    font-size: 2rem;
+    background: transparent;
+    width: 20rem;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.slide .nextBtn {
+    margin-left: auto;
+    margin-top: -4rem;
+}
+
+.lastSlideSection {
+    height: 100vh;
+    width: 75%;
+    padding: 3rem 0rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 3rem;
+}
+
+.returnBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:1200px) {
+    .slideSection {
+        gap: 0;
+    }
+
+    .imgContainer {
+        width: 40%;
+    }
+
+    .question {
+        font-size: 2.5rem;
+    }
+
+    .options h4 {
+        font-size: 1.3rem;
+    }
+
+    /* > slide-5  */
+
+    .slide .message {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .inputContainer label {
+        font-size: 2rem;
+    }
+
+    .inputContainer input {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .slideSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        width: 50%;
+    }
+
+    .slideImg {
+        display: none;
+    }
+
+    .slideMobileImg {
+        display: block;
+    }
+
+    .questionDiv {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .optionContainer {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .options {
+        height: 7rem;
+    }
+
+    /* >= slide-5 */
+    .slide {
+        gap: 3rem;
+    }
+
+    .slide .nextBtn {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .lastSlideSection .message {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .imgContainer {
+        width: 60%;
+    }
+
+    .question {
+        font-size: 1.6rem;
+    }
+
+    .options h4 {
+        font-size: 1.1rem;
+    }
+
+    .walletInputContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputContainer label {
+        font-size: 1.3rem;
+        flex-basis: 40%;
+    }
+
+    .inputContainer input {
+        font-size: 1.2rem;
+        width: 12rem;
+    }
+
+    .walletInputContainer input {
+        width: unset;
+    }
+
+    .slide .message {
+        font-size: 1.5rem;
+    }
+
+    .nextBtn {
+        font-size: 1.3rem;
+    }
+
+    .nextBtn img {
+        width: 2.5rem;
+        height: 0.6rem;
+        margin-left: 10px;
+    }
+
+    .lastSlideSection {
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+
+    .returnBtn {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .options {
+        height: 6rem;
+        width: 90%;
+    }
+
+    .message {
+        font-size: 1.2rem;
+    }
+
+    .inputContainer label {
+        font-size: 1rem;
+    }
+
+    .inputContainer input {
+        font-size: 1rem;
+        width: 9rem;
+    }
+
+    .returnBtn {
+        font-size: 1rem;
+    }
+}
