@@ -4,11 +4,9 @@ import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import './Slide.css';
 
-const Slide5 = ({ index }) => {
+const Slide5 = () => {
     const navigate = useNavigate();
     const { userData, setUserData } = useContext(MyContext);
-
-    // console.log(index, currentSlideIndex)
 
     const handlePrevSlide = () => {
         navigate('/airdrop/slide4')
@@ -37,7 +35,7 @@ const Slide5 = ({ index }) => {
 
                 <div className='questionDiv slide'>
                     <div className='message'>
-                        🎉 Great job on completing the quiz! Now, please provide your Twitter and Telegram user IDs:
+                        Please follow us on Twitter, join our telegram group and provide your Twitter and Telegram user id's:
                     </div>
                     <div className="inputContainer">
                         <label htmlFor="">Twitter ID:</label>

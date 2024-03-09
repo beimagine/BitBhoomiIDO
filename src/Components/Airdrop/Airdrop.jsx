@@ -1,22 +1,14 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import Slide from './Slide';
-import { slidesData } from './slidesData';
 import '../Home/Hero/Hero.css';
-import { useNavigate, Link } from 'react-router-dom';
-import { MyContext } from '../../App';
+import { useNavigate } from 'react-router-dom';
 import './Airdrop.css';
 
 const Airdrop = () => {
     const navigate = useNavigate();
 
-    const { currentSlideIndex, setCurrentSlideIndex } = useContext(MyContext);
-
-    // console.log(currentSlideIndex);
-
     const moveToNextSlide = () => {
-        navigate(`/airdrop/slide1`)
-        setCurrentSlideIndex(currentSlideIndex + 1);
+        navigate(`/airdrop/slide1`);
     };
 
     return (

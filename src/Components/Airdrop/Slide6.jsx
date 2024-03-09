@@ -3,15 +3,18 @@ import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import './Slide.css';
 
-const Slide6 = ({ index }) => {
+const Slide6 = () => {
     const navigate = useNavigate();
     const { userData, setUserData } = useContext(MyContext);
 
-    // console.log(index)
-
     const handleSubmitUserDetails = async () => {
         try {
-            const response = await fetch('http://localhost:5000/user', {
+            if (!userData.twitterId || !userData.telegramId || !userData.solanaWalletAddress) {
+                alert("Please fill all the fields!");
+                return;
+            }
+
+            const response = await fetch('https://bitbhoomi-api.onrender.com/user', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -22,9 +25,15 @@ const Slide6 = ({ index }) => {
             const res = await response.json();
             console.log(res);
 
-            if (res.status === 'ok')
+            if (res.status === 'ok') {
                 navigate(`/airdrop/lastSlide`)
-            else if (res.error.name === "ValidationError")
+                setUserData({
+                    twitterId: "",
+                    telegramId: "",
+                    solanaWalletAddress: "",
+                })
+            }
+            else if (res?.error?.name === "ValidationError")
                 alert("Error: Solana wallet address must be 24 digits long!")
             else
                 alert(res.message)
