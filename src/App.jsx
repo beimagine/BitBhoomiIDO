@@ -16,7 +16,7 @@ export const MyContext = createContext("");
 
 function App() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [userData,setUserData] = useState({})
+  const [userData, setUserData] = useState({})
 
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
         <Carousel />
       </div> */}
       {/* <Home /> */}
-      <MyContext.Provider value={{ currentSlideIndex, setCurrentSlideIndex,userData,setUserData }}>
+      <MyContext.Provider value={{ currentSlideIndex, setCurrentSlideIndex, userData, setUserData }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/airdrop" element={<Airdrop />} />
