@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import './Slide.css';
 
 const Slide6 = () => {
     const navigate = useNavigate();
+    const [btnText, setBtnText] = useState("Submit");
     const { userData, setUserData } = useContext(MyContext);
 
     const handleSubmitUserDetails = async () => {
@@ -13,6 +14,8 @@ const Slide6 = () => {
                 alert("Please fill the field!");
                 return;
             }
+
+            setBtnText("Submitting...")
 
             const response = await fetch('https://bitbhoomi-api.onrender.com/user', {
                 method: "POST",
@@ -26,6 +29,8 @@ const Slide6 = () => {
             console.log(res);
 
             if (res.status === 'ok') {
+                alert("Your details has been submitted")
+                // if (isAlerted)
                 navigate(`/airdrop/lastSlide`)
                 setUserData({
                     twitterId: "",
@@ -81,14 +86,20 @@ const Slide6 = () => {
                             onChange={handleInputsChange}
                         />
                     </div>
-                    <div
+                    <button
+                        onClick={handleSubmitUserDetails}
+                        className="submitBtn"
+                        disable={btnText === 'Submitting...' ? true : false}
+                    >
+                        {btnText}</button>
+                    {/* <div
                         className="options nextBtn"
                         style={{ background: "transparent" }}
                         onClick={handleNextSlide}
                     >
                         NEXT
                         <img src="/airdrop_assets/arrow-right.png" alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </section >
         </div>

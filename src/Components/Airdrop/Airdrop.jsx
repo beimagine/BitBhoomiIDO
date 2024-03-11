@@ -18,8 +18,11 @@ const airdrop = () => {
             <div className='bgStyle' >
                 <section className="heroSection airdropSection" style={{ height: "100vh" }}>
                     <h1 className="heroMaintext">Welcome to the BitBhoomi AirDrop Quiz</h1>
-                    <p style={{ lineHeight: '2rem' }}>We're excited to have you participate in our fun quiz about BitBhoomi and stand a chance to win some Bhoomi tokens! But first, let's make sure you're following us on Twitter (@BITBhoomi) and Telegram (@BITBhoomiCommunity). Drop your user IDs below so we can verify your entry and announce the lucky winner!
+                    <p style={{ lineHeight: '2rem' }}>We're excited to have you participate in our fun quiz about BitBhoomi and stand a chance to win some Bhoomi tokens! Please explore our platform before you get started with the Quiz which helps in answering the questions.
                     </p>
+                    <button className="submitBtn" style={{ fontSize: '1rem' }}>
+                        <a href="https://bitbhoomi.com" target="_blank">Visit BitBhoomi</a>
+                    </button>
 
                     <div className='nextBtnDiv'>
                         <span onClick={moveToNextSlide}>LETS GETS STARTED!</span>

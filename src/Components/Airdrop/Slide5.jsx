@@ -38,7 +38,7 @@ const Slide5 = () => {
 
                 <div className='questionDiv slide'>
                     <div className='message'>
-                        Please follow us on Twitter, join our telegram group and provide your Twitter and Telegram user id's:
+                        Please follow us on Twitter, join our telegram group and provide your Twitter and Telegram user id's to be eligible for airdrop:
                     </div>
                     <div className="inputContainer">
                         <label htmlFor="">Twitter ID:</label>

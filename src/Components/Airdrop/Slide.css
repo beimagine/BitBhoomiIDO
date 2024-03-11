@@ -132,6 +132,18 @@
     margin-top: -4rem;
 }
 
+.submitBtn{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    background: linear-gradient(270deg, #9F7EF6 0%, #6E89D3 16.67%, #5598BD 33.33%, #3BB5A3 50%, #529CBA 66.67%, #7089D4 83.33%, #8D82EA 100%);
+}
+
 .lastSlideSection {
     height: 100vh;
     width: 75%;
