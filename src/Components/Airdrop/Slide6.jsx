@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
-import './Slide.css';
+import './slide.css';
 
 const Slide6 = () => {
     const navigate = useNavigate();

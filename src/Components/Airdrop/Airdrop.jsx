@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import '../Home/Hero/Hero.css';
 import { useNavigate } from 'react-router-dom';
-import './Airdrop.css';
+import './airdrop.css';
 
 const Airdrop = () => {
     const navigate = useNavigate();

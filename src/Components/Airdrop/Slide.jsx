@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { slidesData } from './slidesData';
 import { useNavigate } from 'react-router-dom';
-import './Slide.css';
+import './slide.css';
 
 const Slide = ({ index }) => {
     const navigate = useNavigate();

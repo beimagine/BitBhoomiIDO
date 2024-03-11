@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
-import { MyContext } from '../../App';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Slide.css';
+import './slide.css';
 
 const LastSlide = ({ index }) => {
     const navigate = useNavigate();
