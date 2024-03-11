@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './slide.css';
+import './Slide.css';
 
-const lastSlide = () => {
+const LastSlide = () => {
     const navigate = useNavigate();
 
     return (
@@ -21,4 +21,4 @@ const lastSlide = () => {
     )
 }
 
-export default lastSlide;
+export default LastSlide;
