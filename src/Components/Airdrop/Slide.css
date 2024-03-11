@@ -132,7 +132,7 @@
     margin-top: -4rem;
 }
 
-.submitBtn{
+.submitBtn {
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
@@ -140,7 +140,7 @@
     border-radius: 10px;
     outline: none;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     background: linear-gradient(270deg, #9F7EF6 0%, #6E89D3 16.67%, #5598BD 33.33%, #3BB5A3 50%, #529CBA 66.67%, #7089D4 83.33%, #8D82EA 100%);
 }
 
@@ -296,6 +296,11 @@
         margin-left: 10px;
     }
 
+    .submitBtn {
+        font-size: 1rem;
+        padding: 12px 2rem;
+    }
+
     .lastSlideSection {
         width: 100%;
         padding: 3rem 1rem;
@@ -323,6 +328,11 @@
     .inputContainer input {
         font-size: 1rem;
         width: 9rem;
+    }
+
+    .submitBtn {
+        font-size: 14px;
+        padding: 10px 1rem;
     }
 
     .returnBtn {

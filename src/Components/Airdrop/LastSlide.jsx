@@ -9,7 +9,7 @@ const LastSlide = () => {
         <div className='bgStyle'>
             <section className='lastSlideSection'>
                 <div className='message'>
-                    Thank you for participating! Stay tuned to find out if you're the lucky winner of the Bhoomi token airdrop! 🌳✨
+                Thanks for participating and stay tuned to receive airdrop.
                 </div>
                 <button
                     className="returnBtn"
