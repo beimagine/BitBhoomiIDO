@@ -6,7 +6,7 @@ import Slide from './Components/Airdrop/slide';
 import Slide5 from './Components/Airdrop/slide5';
 import Slide6 from './Components/Airdrop/slide6';
 import LastSlide from './Components/Airdrop/lastSlide';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route,BrowserRouter } from 'react-router-dom';
 import "./App.css"
 
 import { createContext } from 'react';
@@ -18,6 +18,7 @@ function App() {
 
   return (
     <MyContext.Provider value={{ userData, setUserData }}>
+      <BrowserRouter>
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/airdrop" element={<Airdrop />} />
@@ -29,6 +30,7 @@ function App() {
         <Route path="/airdrop/slide6" element={<Slide6 />} />
         <Route path="/airdrop/lastSlide" element={<LastSlide />} />
       </Routes>
+      </BrowserRouter>
       <Footer />
     </MyContext.Provider>
   )
