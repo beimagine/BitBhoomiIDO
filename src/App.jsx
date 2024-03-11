@@ -18,7 +18,6 @@ function App() {
 
   return (
     <MyContext.Provider value={{ userData, setUserData }}>
-      <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -31,7 +30,6 @@ function App() {
         <Route path="/airdrop/slide6" element={<Slide6 />} />
         <Route path="/airdrop/lastSlide" element={<LastSlide />} />
       </Routes>
-      </BrowserRouter>
       <Footer />
     </MyContext.Provider>
   )
