@@ -9,8 +9,8 @@ const Slide6 = () => {
 
     const handleSubmitUserDetails = async () => {
         try {
-            if (!userData.twitterId || !userData.telegramId || !userData.solanaWalletAddress) {
-                alert("Please fill all the fields!");
+            if (!userData.solanaWalletAddress) {
+                alert("Please fill the field!");
                 return;
             }
 

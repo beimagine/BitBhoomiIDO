@@ -12,7 +12,11 @@ const Slide5 = () => {
     };
 
     const handleNextSlide = () => {
-        navigate(`/airdrop/slide6`)
+        if (!userData.twitterId || !userData.telegramId) {
+            alert("Please fill all fields!")
+            return;
+        }
+        navigate(`/airdrop/slide6`);
     };
 
     const handleInputsChange = (e) => {
