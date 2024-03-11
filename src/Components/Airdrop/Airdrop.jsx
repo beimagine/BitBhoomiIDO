@@ -4,7 +4,7 @@ import '../Home/Hero/Hero.css';
 import { useNavigate } from 'react-router-dom';
 import './airdrop.css';
 
-const Airdrop = () => {
+const airdrop = () => {
     const navigate = useNavigate();
 
     const moveToNextSlide = () => {
@@ -31,4 +31,4 @@ const Airdrop = () => {
     )
 }
 
-export default Airdrop;
+export default airdrop;

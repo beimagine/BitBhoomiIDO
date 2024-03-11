@@ -3,7 +3,7 @@ import { slidesData } from './slidesData';
 import { useNavigate } from 'react-router-dom';
 import './slide.css';
 
-const Slide = ({ index }) => {
+const slide = ({ index }) => {
     const navigate = useNavigate();
     const [isQuestionAttempted, setIsQuestionAttempted] = useState([false, false, false, false]);
 
@@ -105,4 +105,4 @@ const Slide = ({ index }) => {
     )
 }
 
-export default Slide;
+export default slide;

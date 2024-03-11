@@ -14,7 +14,6 @@ import { createContext } from 'react';
 export const MyContext = createContext("");
 
 function App() {
-  // const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [userData, setUserData] = useState({})
 
   return (

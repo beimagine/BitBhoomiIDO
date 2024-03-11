@@ -3,7 +3,7 @@ import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import './slide.css';
 
-const Slide6 = () => {
+const slide6 = () => {
     const navigate = useNavigate();
     const { userData, setUserData } = useContext(MyContext);
 
@@ -95,4 +95,4 @@ const Slide6 = () => {
     )
 }
 
-export default Slide6;
+export default slide6;
