@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import { slidesData } from './slidesData';
+import React, { useContext } from 'react';
 import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import './Slide.css';
@@ -27,10 +26,10 @@ const Slide5 = () => {
             <section className="slideSection">
                 <div className="imgContainer">
                     <div className="returnBtnContainer" onClick={handlePrevSlide}>
-                        <img src="/airdrop/arrow-left.png" alt="" />
+                        <img src="/airdrop_assets/arrow-left.png" alt="" />
                     </div>
-                    <img src="/airdrop/slide-5.png" alt="" className="slideImg" />
-                    <img src="/airdrop/mobile/slide-5.png" alt="" className="slideMobileImg" />
+                    <img src="/airdrop_assets/slide-5.png" alt="" className="slideImg" />
+                    <img src="/airdrop_assets/mobile/slide-5.png" alt="" className="slideMobileImg" />
                 </div>
 
                 <div className='questionDiv slide'>
@@ -63,7 +62,7 @@ const Slide5 = () => {
                         onClick={handleNextSlide}
                     >
                         NEXT
-                        <img src="/airdrop/arrow-right.png" alt="" />
+                        <img src="/airdrop_assets/arrow-right.png" alt="" />
                     </div>
                 </div>
             </section >

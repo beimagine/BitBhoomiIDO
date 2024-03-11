@@ -61,10 +61,10 @@ const Slide6 = () => {
             <section className="slideSection">
                 <div className="imgContainer">
                     <div className="returnBtnContainer" onClick={handlePrevSlide}>
-                        <img src="/airdrop/arrow-left.png" alt="" />
+                        <img src="/airdrop_assets/arrow-left.png" alt="" />
                     </div>
-                    <img src="/airdrop/slide-6.png" alt="" className="slideImg" />
-                    <img src="/airdrop/mobile/slide-6.png" alt="" className="slideMobileImg" />
+                    <img src="/airdrop_assets/slide-6.png" alt="" className="slideImg" />
+                    <img src="/airdrop_assets/mobile/slide-6.png" alt="" className="slideMobileImg" />
                 </div>
 
                 <div className='questionDiv slide'>
@@ -87,7 +87,7 @@ const Slide6 = () => {
                         onClick={handleNextSlide}
                     >
                         NEXT
-                        <img src="/airdrop/arrow-right.png" alt="" />
+                        <img src="/airdrop_assets/arrow-right.png" alt="" />
                     </div>
                 </div>
             </section >

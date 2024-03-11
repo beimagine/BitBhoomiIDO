@@ -23,7 +23,7 @@ const Airdrop = () => {
 
                     <div className='nextBtnDiv'>
                         <span onClick={moveToNextSlide}>LETS GETS STARTED!</span>
-                        <img src="/airdrop/arrow-right.png" alt="" />
+                        <img src="/airdrop_assets/arrow-right.png" alt="" />
                     </div>
                 </section>
             </div>

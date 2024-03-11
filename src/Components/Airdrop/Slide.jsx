@@ -60,7 +60,7 @@ const Slide = ({ index }) => {
             <section className="slideSection">
                 <div className="imgContainer">
                     <div className="returnBtnContainer" onClick={handlePrevSlide}>
-                        <img src="/airdrop/arrow-left.png" alt="" />
+                        <img src="/airdrop_assets/arrow-left.png" alt="" />
                     </div>
                     <img src={slidesData[index - 1].img} alt="" className="slideImg" />
                     <img src={slidesData[index - 1].mobileImg} alt="" className="slideMobileImg" />
@@ -96,7 +96,7 @@ const Slide = ({ index }) => {
                             onClick={handleNextSlide}
                         >
                             NEXT
-                            <img src="/airdrop/arrow-right.png" alt="" />
+                            <img src="/airdrop_assets/arrow-right.png" alt="" />
                         </div>
                     </div>
                 </div>
