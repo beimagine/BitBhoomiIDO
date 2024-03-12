@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import GoogleTagManager from './GoogleTagManager';
 import Home from './Components/Home/Home';
 import Airdrop from './Components/Airdrop/Airdrop';
 import Footer from './Components/Footer/Footer';
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <MyContext.Provider value={{ userData, setUserData }}>
+      <GoogleTagManager />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
