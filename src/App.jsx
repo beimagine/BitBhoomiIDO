@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import GoogleTagManager from './GoogleTagManager';
 import Home from './Components/Home/Home';
+import Ido from './Components/Ido/Ido';
 import Airdrop from './Components/Airdrop/Airdrop';
 import Footer from './Components/Footer/Footer';
 import Slide from './Components/Airdrop/Slide';
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/ido" element={<Ido />} />
         <Route path="/airdrop" element={<Airdrop />} />
         <Route path="/airdrop/slide1" element={<Slide index="1" />} />
         <Route path="/airdrop/slide2" element={<Slide index="2" />} />

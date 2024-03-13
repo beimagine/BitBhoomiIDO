@@ -50,7 +50,7 @@ const Navbar = () => {
             </span>
             <div className="linksContainer">
                 <button className="navLinks" onClick={scrollToTop}>HOME</button>
-                <button className="navLinks">IDO</button>
+                <button className="navLinks" onClick={() => navigate('/ido')}>IDO</button>
                 <button className="navLinks" onClick={() => navigate('/airdrop')}>AIRDROP</button>
             </div>
             <div className="btnContainer">
@@ -78,7 +78,7 @@ const Navbar = () => {
             <div className="mobileNav" ref={mobileNavElement}>
                 <img src="/close.png" alt="closeIcon" onClick={closeMobileNav} className="closeIcon" />
                 <button className="navLinks" onClick={scrollToTop}>Home</button>
-                <button className="navLinks">IDO</button>
+                <button className="navLinks" onClick={() => navigate('/ido')}>IDO</button>
                 <button className="navLinks" onClick={() => navigate('/airdrop')}>Airdrop</button>
                 <button
                     className="walletBtn"
