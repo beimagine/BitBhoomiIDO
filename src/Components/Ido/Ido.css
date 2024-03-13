@@ -26,7 +26,7 @@
 .formContainer h1 {
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
 }
 
@@ -54,6 +54,7 @@
     padding: 10px;
     width: 80%;
     margin: auto;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     background: linear-gradient(270deg, #9F7EF6 0%, #6E89D3 16.67%, #5598BD 33.33%, #3BB5A3 50%, #529CBA 66.67%, #7089D4 83.33%, #8D82EA 100%);
     border: none;
@@ -99,7 +100,7 @@
 }
 
 .infoContainer h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
@@ -120,6 +121,10 @@
 .detailContainer span {
     display: flex;
     gap: 1rem;
+}
+
+.address {
+    flex-direction: column;
 }
 
 .detailContainer .value {

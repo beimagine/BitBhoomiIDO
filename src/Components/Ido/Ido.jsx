@@ -37,8 +37,8 @@ const Ido = () => {
                                 <span>Symbol:</span>
                                 <span className="value">$Bhoomi</span>
                             </span>
-                            <span>
-                                <p>Contract Address:</p>
+                            <span className="address">
+                                <span>Contract Address:</span>
                                 <h6 className="value">Aa5w19iqzLynJ1kcAKQf53LhWSBX9c1dGhSzRJweRUY9</h6>
                             </span>
                             <span>
