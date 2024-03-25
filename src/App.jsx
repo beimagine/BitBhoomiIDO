@@ -23,7 +23,9 @@ function App() {
       <GoogleTagManager />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/">
+          {typeof window !== "undefined" && window.location.replace("https://bitbhoomiido.tech/")}
+        </Route>
         <Route path="/ido" element={<Ido />} />
         <Route path="/airdrop" element={<Airdrop />} />
         <Route path="/airdrop/slide1" element={<Slide index="1" />} />
